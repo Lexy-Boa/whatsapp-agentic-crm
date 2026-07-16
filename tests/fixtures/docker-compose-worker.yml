@@ -1,0 +1,3 @@
+services:
+  worker:
+    command: python -m src.workers.message_processor

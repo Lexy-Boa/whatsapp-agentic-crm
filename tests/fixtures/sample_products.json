@@ -1,0 +1,46 @@
+[
+    {
+        "shopify_product_id": "prod_001",
+        "sku": "DMB-2341",
+        "name": "Traditional Kasavu Saree",
+        "description": "Handwoven Kerala kasavu saree with golden border",
+        "price": 8500,
+        "category": "saree",
+        "attributes": {"color": "off-white", "fabric": "cotton", "border": "gold"},
+        "occasions": ["wedding", "festival", "traditional"],
+        "inventory_quantity": 5
+    },
+    {
+        "shopify_product_id": "prod_002",
+        "sku": "DMB-2342",
+        "name": "Red Silk Wedding Saree",
+        "description": "Premium silk saree with intricate zari work, perfect for weddings",
+        "price": 15000,
+        "category": "saree",
+        "attributes": {"color": "red", "fabric": "silk", "work": "zari"},
+        "occasions": ["wedding", "engagement"],
+        "inventory_quantity": 3
+    },
+    {
+        "shopify_product_id": "prod_003",
+        "sku": "DMB-2343",
+        "name": "Cotton Churidar Set",
+        "description": "Comfortable everyday cotton churidar with dupatta",
+        "price": 2500,
+        "category": "churidar",
+        "attributes": {"color": "blue", "fabric": "cotton"},
+        "occasions": ["casual"],
+        "inventory_quantity": 12
+    },
+    {
+        "shopify_product_id": "prod_004",
+        "sku": "DMB-2344",
+        "name": "Designer Pattu Pavadai",
+        "description": "South Indian silk pattu pavadai for girls, ideal for festivals",
+        "price": 4500,
+        "category": "kids",
+        "attributes": {"color": "pink", "fabric": "silk"},
+        "occasions": ["festival", "traditional", "puja"],
+        "inventory_quantity": 8
+    }
+]

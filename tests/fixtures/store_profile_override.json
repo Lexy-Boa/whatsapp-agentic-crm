@@ -1,0 +1,8 @@
+{
+  "brand_name": "Demo Store",
+  "service_policies": {
+    "payments": [
+      "Do not promise COD."
+    ]
+  }
+}

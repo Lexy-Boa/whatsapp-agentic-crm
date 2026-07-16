@@ -1,0 +1,135 @@
+{
+  "_schema_version": "1.0.0",
+  "owner": "DemoBoutique",
+  "status": "draft_owner_review",
+  "editing_instructions": [
+    "Edit message_body when DemoBoutique wants different wording.",
+    "If a {{number}} placeholder is added, removed, or repurposed, update variables in the same template.",
+    "Keep utility templates factual and tied to a customer request or transaction.",
+    "Do not use marketing content in UTILITY templates.",
+    "Submit only the templates needed for the first live workflow."
+  ],
+  "templates": [
+    {
+      "name": "assistant_unavailable",
+      "category": "UTILITY",
+      "language": "en",
+      "status": "draft_owner_review",
+      "purpose": "Safe fallback when AI generation fails but the conversation should not go silent.",
+      "message_body": "Hi {{1}}, our assistant is temporarily unavailable. The DemoBoutique team will follow up shortly.",
+      "variables": [
+        {
+          "index": 1,
+          "meaning": "customer first name or friendly fallback",
+          "example": "Anu"
+        }
+      ],
+      "owner_questions": [
+        "Should this say DemoBoutique assistant or only DemoBoutique team?",
+        "Should the follow-up promise say shortly, today, or a specific business-hours window?"
+      ],
+      "submission_notes": "Good first utility template because it protects the demo and early live use from silent failure."
+    },
+    {
+      "name": "handoff_followup",
+      "category": "UTILITY",
+      "language": "en",
+      "status": "draft_owner_review",
+      "purpose": "Owner follow-up after the assistant routes an issue to human review.",
+      "message_body": "Hi {{1}}, we checked your request about {{2}}. The DemoBoutique team will help you from here.",
+      "variables": [
+        {
+          "index": 1,
+          "meaning": "customer first name or friendly fallback",
+          "example": "Anu"
+        },
+        {
+          "index": 2,
+          "meaning": "short issue label",
+          "example": "your delivery"
+        }
+      ],
+      "owner_questions": [
+        "Should this be more formal or more conversational?",
+        "Should it mention that the assistant handed the chat to the owner?"
+      ],
+      "submission_notes": "Useful once Control Room handoff notes are part of the owner workflow."
+    },
+    {
+      "name": "order_detail_request",
+      "category": "UTILITY",
+      "language": "en",
+      "status": "draft_owner_review",
+      "purpose": "Ask for order details before discussing returns, exchanges, damaged items, or delivery.",
+      "message_body": "Hi {{1}}, please share your order ID and a photo if relevant so the DemoBoutique team can check this properly.",
+      "variables": [
+        {
+          "index": 1,
+          "meaning": "customer first name or friendly fallback",
+          "example": "Anu"
+        }
+      ],
+      "owner_questions": [
+        "Should every return or damage case require a photo?",
+        "Should the owner ask for invoice number, order ID, phone number, or all three?"
+      ],
+      "submission_notes": "Keeps policy-sensitive cases factual before the owner confirms return/exchange rules."
+    },
+    {
+      "name": "delivery_status_update",
+      "category": "UTILITY",
+      "language": "en",
+      "status": "draft_owner_review",
+      "purpose": "Owner-confirmed delivery update after order lookup.",
+      "message_body": "Hi {{1}}, your DemoBoutique order {{2}} is currently {{3}}. We will update you if anything changes.",
+      "variables": [
+        {
+          "index": 1,
+          "meaning": "customer first name or friendly fallback",
+          "example": "Anu"
+        },
+        {
+          "index": 2,
+          "meaning": "order identifier",
+          "example": "DMB-1024"
+        },
+        {
+          "index": 3,
+          "meaning": "owner-confirmed delivery status",
+          "example": "packed and ready for dispatch"
+        }
+      ],
+      "owner_questions": [
+        "What exact order identifier does DemoBoutique use?",
+        "Should delivery updates mention courier names or tracking links?"
+      ],
+      "submission_notes": "Submit after the real order lookup and delivery-status process is known."
+    },
+    {
+      "name": "promo_opt_in",
+      "category": "MARKETING",
+      "language": "en",
+      "status": "draft_owner_review",
+      "purpose": "Ask for explicit consent before sending future promotional messages.",
+      "message_body": "Hi {{1}}, would you like to receive DemoBoutique updates for new arrivals and offers? Reply YES to opt in.",
+      "variables": [
+        {
+          "index": 1,
+          "meaning": "customer first name or friendly fallback",
+          "example": "Anu"
+        }
+      ],
+      "owner_questions": [
+        "Does DemoBoutique want promotional WhatsApp messages in phase 1?",
+        "What opt-out wording should be used after a customer opts in?"
+      ],
+      "submission_notes": "Defer unless the owner explicitly wants marketing. This is not needed for the first support/demo workflow."
+    }
+  ],
+  "change_log": [
+    {
+      "timestamp": "2026-04-16T02:55:00+05:30",
+      "change": "Initial editable draft pack created from the business knowledge pack."
+    }
+  ]
+}

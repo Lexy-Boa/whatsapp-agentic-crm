@@ -1,0 +1,178 @@
+[
+  {
+    "shopify_product_id": "demo_001",
+    "sku": "DMB-3001",
+    "name": "Traditional Kasavu Saree",
+    "description": "Handwoven Kerala kasavu saree with gold border for weddings and festivals.",
+    "price": 8500,
+    "category": "saree",
+    "attributes": {"color": "off-white", "fabric": "cotton", "border": "gold"},
+    "occasions": ["wedding", "festival", "traditional"],
+    "inventory_quantity": 5
+  },
+  {
+    "shopify_product_id": "demo_002",
+    "sku": "DMB-3002",
+    "name": "Temple Border Kerala Saree",
+    "description": "Elegant cotton saree with temple border styling for Onam and family functions.",
+    "price": 7200,
+    "category": "saree",
+    "attributes": {"color": "cream", "fabric": "cotton", "border": "temple"},
+    "occasions": ["festival", "traditional", "puja"],
+    "inventory_quantity": 7
+  },
+  {
+    "shopify_product_id": "demo_003",
+    "sku": "DMB-3003",
+    "name": "Red Silk Wedding Saree",
+    "description": "Premium silk saree with zari work for bridal and engagement occasions.",
+    "price": 15000,
+    "category": "saree",
+    "attributes": {"color": "red", "fabric": "silk", "work": "zari"},
+    "occasions": ["wedding", "engagement"],
+    "inventory_quantity": 3
+  },
+  {
+    "shopify_product_id": "demo_004",
+    "sku": "DMB-3004",
+    "name": "Peacock Blue Kanchipuram Saree",
+    "description": "Rich Kanchipuram silk saree in peacock blue with contrast pallu.",
+    "price": 18500,
+    "category": "saree",
+    "attributes": {"color": "blue", "fabric": "silk", "style": "kanchipuram"},
+    "occasions": ["wedding", "party", "engagement"],
+    "inventory_quantity": 2
+  },
+  {
+    "shopify_product_id": "demo_005",
+    "sku": "DMB-3005",
+    "name": "Everyday Cotton Saree",
+    "description": "Soft breathable cotton saree for daily wear and office use.",
+    "price": 2200,
+    "category": "saree",
+    "attributes": {"color": "green", "fabric": "cotton"},
+    "occasions": ["casual"],
+    "inventory_quantity": 14
+  },
+  {
+    "shopify_product_id": "demo_006",
+    "sku": "DMB-3006",
+    "name": "Ivory Linen Saree",
+    "description": "Minimal linen saree with subtle zari stripes for elegant daytime functions.",
+    "price": 6400,
+    "category": "saree",
+    "attributes": {"color": "ivory", "fabric": "linen"},
+    "occasions": ["formal", "casual"],
+    "inventory_quantity": 6
+  },
+  {
+    "shopify_product_id": "demo_007",
+    "sku": "DMB-3007",
+    "name": "Cotton Churidar Set",
+    "description": "Comfortable cotton churidar with dupatta for daily wear.",
+    "price": 2500,
+    "category": "churidar",
+    "attributes": {"color": "blue", "fabric": "cotton"},
+    "occasions": ["casual"],
+    "inventory_quantity": 12
+  },
+  {
+    "shopify_product_id": "demo_008",
+    "sku": "DMB-3008",
+    "name": "Anarkali Party Set",
+    "description": "Flowy Anarkali set with embroidery for celebrations and parties.",
+    "price": 5200,
+    "category": "churidar",
+    "attributes": {"color": "maroon", "fabric": "georgette"},
+    "occasions": ["party", "festival"],
+    "inventory_quantity": 4
+  },
+  {
+    "shopify_product_id": "demo_009",
+    "sku": "DMB-3009",
+    "name": "Designer Pattu Pavadai",
+    "description": "Silk pattu pavadai for girls, ideal for festivals and family functions.",
+    "price": 4500,
+    "category": "kids",
+    "attributes": {"color": "pink", "fabric": "silk"},
+    "occasions": ["festival", "traditional", "puja"],
+    "inventory_quantity": 8
+  },
+  {
+    "shopify_product_id": "demo_010",
+    "sku": "DMB-3010",
+    "name": "Girls Onam Pavadai Set",
+    "description": "Festive cream and gold pavadai set for Onam celebrations.",
+    "price": 3200,
+    "category": "kids",
+    "attributes": {"color": "cream", "fabric": "cotton-silk"},
+    "occasions": ["festival", "traditional"],
+    "inventory_quantity": 10
+  },
+  {
+    "shopify_product_id": "demo_011",
+    "sku": "DMB-3011",
+    "name": "Bridal Dupatta",
+    "description": "Heavy bridal dupatta with beadwork for layering over wedding outfits.",
+    "price": 3800,
+    "category": "accessories",
+    "attributes": {"color": "red", "fabric": "net"},
+    "occasions": ["wedding", "engagement"],
+    "inventory_quantity": 5
+  },
+  {
+    "shopify_product_id": "demo_012",
+    "sku": "DMB-3012",
+    "name": "Festive Shawl",
+    "description": "Light festive shawl with woven motifs for puja and family gatherings.",
+    "price": 1800,
+    "category": "accessories",
+    "attributes": {"color": "mustard", "fabric": "cotton"},
+    "occasions": ["festival", "puja"],
+    "inventory_quantity": 9
+  },
+  {
+    "shopify_product_id": "demo_013",
+    "sku": "DMB-3013",
+    "name": "Black Party Saree",
+    "description": "Contemporary black saree with sequin detailing for evening wear.",
+    "price": 9800,
+    "category": "saree",
+    "attributes": {"color": "black", "fabric": "georgette"},
+    "occasions": ["party", "formal"],
+    "inventory_quantity": 4
+  },
+  {
+    "shopify_product_id": "demo_014",
+    "sku": "DMB-3014",
+    "name": "Lavender Linen Kurta Set",
+    "description": "Simple linen kurta set for comfortable everyday wear.",
+    "price": 3400,
+    "category": "kurta",
+    "attributes": {"color": "lavender", "fabric": "linen"},
+    "occasions": ["casual", "formal"],
+    "inventory_quantity": 11
+  },
+  {
+    "shopify_product_id": "demo_015",
+    "sku": "DMB-3015",
+    "name": "Emerald Silk Half Saree",
+    "description": "Silk half saree in emerald tones for engagement and festive occasions.",
+    "price": 11200,
+    "category": "half-saree",
+    "attributes": {"color": "emerald", "fabric": "silk"},
+    "occasions": ["engagement", "festival", "party"],
+    "inventory_quantity": 3
+  },
+  {
+    "shopify_product_id": "demo_016",
+    "sku": "DMB-3016",
+    "name": "Budget Festive Saree",
+    "description": "Affordable festive saree under 5000 for gifting and family events.",
+    "price": 4200,
+    "category": "saree",
+    "attributes": {"color": "magenta", "fabric": "art-silk"},
+    "occasions": ["festival", "party"],
+    "inventory_quantity": 13
+  }
+]

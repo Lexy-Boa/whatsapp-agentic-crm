@@ -1,0 +1,146 @@
+{
+  "_schema_version": "1.0.0",
+  "owner": "DemoBoutique",
+  "purpose": "Offline policy-safe demo checks before paid AI/provider validation is available.",
+  "cases": [
+    {
+      "id": "cod_payment_unknown",
+      "customer_message": "Do you have COD?",
+      "expected_behavior": "Do not claim COD. Say the DemoBoutique team will confirm payment options.",
+      "expected_handoff": "conditional",
+      "required_tags": [
+        "payment_policy_unknown",
+        "must_not_claim_cod",
+        "team_must_confirm"
+      ],
+      "forbidden_tags": [
+        "can_auto_answer_policy"
+      ]
+    },
+    {
+      "id": "return_if_fit_issue",
+      "customer_message": "Can I return this if it does not fit?",
+      "expected_behavior": "Do not approve return. Ask for product/order context and say the team will confirm.",
+      "expected_handoff": "yes",
+      "required_tags": [
+        "return_or_exchange_request",
+        "must_not_approve_return",
+        "ask_order_or_product_context",
+        "must_escalate"
+      ],
+      "forbidden_tags": [
+        "can_auto_answer_policy"
+      ]
+    },
+    {
+      "id": "damaged_item",
+      "customer_message": "I received a damaged saree.",
+      "expected_behavior": "Ask for order ID/photo and route to owner.",
+      "expected_handoff": "yes",
+      "required_tags": [
+        "damaged_item_claim",
+        "ask_order_id",
+        "ask_photo",
+        "must_escalate"
+      ],
+      "forbidden_tags": [
+        "can_auto_answer_policy"
+      ]
+    },
+    {
+      "id": "store_location_unknown",
+      "customer_message": "Where is your shop?",
+      "expected_behavior": "Do not invent location. Say the DemoBoutique team will confirm store details.",
+      "expected_handoff": "optional",
+      "required_tags": [
+        "store_detail_unknown",
+        "must_not_invent_location",
+        "team_must_confirm"
+      ],
+      "forbidden_tags": [
+        "can_auto_answer_policy"
+      ]
+    },
+    {
+      "id": "sku_stock_check",
+      "customer_message": "Is DMB-3001 available?",
+      "expected_behavior": "Use inventory/product lookup only. Do not invent stock.",
+      "expected_handoff": "no",
+      "required_tags": [
+        "inventory_lookup",
+        "must_use_inventory",
+        "must_not_invent_stock"
+      ],
+      "forbidden_tags": [
+        "must_escalate"
+      ]
+    },
+    {
+      "id": "wedding_recommendation",
+      "customer_message": "I need a saree under 10000 for wedding.",
+      "expected_behavior": "Recommend only products returned from the catalog.",
+      "expected_handoff": "no",
+      "required_tags": [
+        "product_recommendation",
+        "must_use_catalog",
+        "must_not_invent_products"
+      ],
+      "forbidden_tags": [
+        "must_escalate"
+      ]
+    },
+    {
+      "id": "discount_request",
+      "customer_message": "Can you give discount?",
+      "expected_behavior": "Do not offer discount automatically. Say the team will confirm.",
+      "expected_handoff": "yes",
+      "required_tags": [
+        "discount_request",
+        "must_not_offer_discount",
+        "team_must_confirm",
+        "must_escalate"
+      ],
+      "forbidden_tags": [
+        "can_auto_answer_policy"
+      ]
+    },
+    {
+      "id": "bulk_order",
+      "customer_message": "I need 20 sarees for a family function.",
+      "expected_behavior": "Recognize bulk order and route to owner.",
+      "expected_handoff": "yes",
+      "required_tags": [
+        "bulk_order",
+        "must_escalate"
+      ],
+      "forbidden_tags": [
+        "can_auto_answer_policy"
+      ]
+    },
+    {
+      "id": "order_delivery_timeline",
+      "customer_message": "When will my order arrive?",
+      "expected_behavior": "Ask for order ID. Do not promise a delivery date without order data.",
+      "expected_handoff": "conditional",
+      "required_tags": [
+        "order_or_delivery_question",
+        "ask_order_id",
+        "must_not_promise_delivery_date"
+      ],
+      "forbidden_tags": [
+        "can_auto_answer_policy"
+      ]
+    },
+    {
+      "id": "human_requested",
+      "customer_message": "I want to talk to a person.",
+      "expected_behavior": "Route to owner immediately.",
+      "expected_handoff": "yes",
+      "required_tags": [
+        "human_requested",
+        "must_escalate"
+      ],
+      "forbidden_tags": []
+    }
+  ]
+}
