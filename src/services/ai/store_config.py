@@ -1,5 +1,5 @@
 """
-Store configuration loading for the store assistant.
+Store configuration loading for the Avni assistant.
 
 Phase 1 is single-tenant per deployment, so this module keeps the default
 DemoBoutique profile local and owner-reviewable instead of adding admin UI or
@@ -42,7 +42,7 @@ _FALLBACK_STORE_CONFIG: dict[str, Any] = {
     "fallback_messages": {
         "assistant_unavailable": {
             "en": (
-                "Sorry, our assistant is temporarily unavailable. The DemoBoutique "
+                "Sorry, Avni is temporarily unavailable. The DemoBoutique "
                 "team will follow up shortly."
             )
         }

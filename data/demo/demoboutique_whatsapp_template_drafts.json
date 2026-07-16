@@ -16,7 +16,7 @@
       "language": "en",
       "status": "draft_owner_review",
       "purpose": "Safe fallback when AI generation fails but the conversation should not go silent.",
-      "message_body": "Hi {{1}}, our assistant is temporarily unavailable. The DemoBoutique team will follow up shortly.",
+      "message_body": "Hi {{1}}, Avni is temporarily unavailable. The DemoBoutique team will follow up shortly.",
       "variables": [
         {
           "index": 1,
@@ -25,7 +25,7 @@
         }
       ],
       "owner_questions": [
-        "Should this say DemoBoutique assistant or only DemoBoutique team?",
+        "Should this say Avni, DemoBoutique assistant, or only DemoBoutique team?",
         "Should the follow-up promise say shortly, today, or a specific business-hours window?"
       ],
       "submission_notes": "Good first utility template because it protects the demo and early live use from silent failure."
@@ -35,7 +35,7 @@
       "category": "UTILITY",
       "language": "en",
       "status": "draft_owner_review",
-      "purpose": "Owner follow-up after the assistant routes an issue to human review.",
+      "purpose": "Owner follow-up after Avni routes an issue to human review.",
       "message_body": "Hi {{1}}, we checked your request about {{2}}. The DemoBoutique team will help you from here.",
       "variables": [
         {
@@ -51,7 +51,7 @@
       ],
       "owner_questions": [
         "Should this be more formal or more conversational?",
-        "Should it mention that the assistant handed the chat to the owner?"
+        "Should it mention that Avni handed the chat to the owner?"
       ],
       "submission_notes": "Useful once Control Room handoff notes are part of the owner workflow."
     },

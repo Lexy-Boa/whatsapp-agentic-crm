@@ -331,7 +331,7 @@ async def test_claude_failure_falls_back_to_handoff():
     result = await orchestrator.process_message(
         customer_phone=CUSTOMER_PHONE,
         message_type="text",
-        content="Hello there",
+        content="Hello Avni",
     )
 
     assert result.success

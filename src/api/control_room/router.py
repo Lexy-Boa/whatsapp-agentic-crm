@@ -377,7 +377,7 @@ async def resolve_handoff(
         raise HTTPException(status_code=404, detail="Handoff not found")
 
     note = payload.note if payload and payload.note is not None else handoff.notes
-    ok = await repo.resolve(handoff_id, notes=note or "Resolved from Control Room")
+    ok = await repo.resolve(handoff_id, notes=note or "Resolved from Avni Control Room")
     if not ok:
         raise HTTPException(status_code=400, detail="Unable to resolve handoff")
 
@@ -580,7 +580,7 @@ async def control_room_page() -> str:
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Control Room</title>
+  <title>Avni Control Room</title>
   <style>
     :root {
       --bg: #f4efe6;
@@ -674,8 +674,8 @@ async def control_room_page() -> str:
   <div class="shell">
     <div class="hero">
       <div class="eyebrow">Owner Console</div>
-      <h1>Control Room</h1>
-      <div class="sub">A single place to see whether the assistant is healthy, what it has been doing, and where it needs attention.</div>
+      <h1>Avni Control Room</h1>
+      <div class="sub">A single place to see whether Avni is healthy, what it has been doing, and where it needs attention.</div>
     </div>
     <div id="summary" class="status-row"></div>
     <div class="grid">

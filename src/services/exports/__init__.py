@@ -1,1 +1,1 @@
-"""Export helpers for Control Room."""
+"""Export helpers for Avni Control Room."""

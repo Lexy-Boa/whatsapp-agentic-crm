@@ -72,7 +72,7 @@ async def test_control_room_page_renders_title(api_client: tuple[AsyncClient, As
     client, _session = api_client
     response = await client.get("/control-room")
     assert response.status_code == 200
-    assert "Control Room" in response.text
+    assert "Avni Control Room" in response.text
 
 
 async def test_control_room_invalid_range_returns_400(api_client: tuple[AsyncClient, AsyncMock]):

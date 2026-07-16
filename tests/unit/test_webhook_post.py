@@ -26,7 +26,7 @@ def _signed_headers(body: bytes, secret: str) -> dict[str, str]:
     return {"X-Hub-Signature-256": f"sha256={digest}"}
 
 
-def _payload(message_id: str = "wamid.test.1", text: str = "Hello there") -> dict:
+def _payload(message_id: str = "wamid.test.1", text: str = "Hello Avni") -> dict:
     return {
         "object": "whatsapp_business_account",
         "entry": [
@@ -89,7 +89,7 @@ async def test_webhook_post_accepts_valid_signed_text_and_queues_payload(
     queued_payload = enqueue_mock.await_args.args[1]
     assert queued_payload["from_phone"] == "917994685550"
     assert queued_payload["message_type"] == "text"
-    assert queued_payload["text"] == "Hello there"
+    assert queued_payload["text"] == "Hello Avni"
     assert queued_payload["whatsapp_message_id"] == "wamid.test.1"
 
 

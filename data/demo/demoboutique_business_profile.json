@@ -53,9 +53,9 @@
   ],
   "fallback_messages": {
     "assistant_unavailable": {
-      "en": "Sorry, our assistant is temporarily unavailable. The DemoBoutique team will follow up shortly.",
-      "ml": "ക്ഷമിക്കണം, അസിസ്റ്റന്റ് ഇപ്പോൾ ലഭ്യമല്ല. DemoBoutique ടീം ഉടൻ ബന്ധപ്പെടും.",
-      "ta": "மன்னிக்கவும், உதவியாளர் இப்போது கிடைக்கவில்லை. DemoBoutique குழு விரைவில் தொடர்பு கொள்வார்கள்."
+      "en": "Sorry, Avni is temporarily unavailable. The DemoBoutique team will follow up shortly.",
+      "ml": "ക്ഷമിക്കണം, Avni ഇപ്പോൾ ലഭ്യമല്ല. DemoBoutique ടീം ഉടൻ ബന്ധപ്പെടും.",
+      "ta": "மன்னிக்கவும், Avni இப்போது கிடைக்கவில்லை. DemoBoutique குழு விரைவில் தொடர்பு கொள்வார்கள்."
     },
     "unknown_policy": {
       "en": "I will check this with the DemoBoutique team and get back to you with the correct details.",

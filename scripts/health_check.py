@@ -247,7 +247,7 @@ async def run_checks(args: argparse.Namespace) -> None:
     )
 
     print("\n" + ("-" * 55))
-    print("  WhatsApp CRM - Health Check")
+    print("  Avni WhatsApp CRM - Health Check")
     print("-" * 55)
 
     if run_all or args.db:

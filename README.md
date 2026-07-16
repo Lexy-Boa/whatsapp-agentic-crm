@@ -1,8 +1,8 @@
-# WhatsApp Agentic Commerce CRM
+# Avni — Agentic WhatsApp Commerce CRM
 
-A production-grade, AI-native WhatsApp CRM for e-commerce, built around a **single Claude tool-use agentic loop**. Customers chat (or send voice notes in South Indian languages) on WhatsApp; the agent searches the catalog, checks live inventory, looks up orders, and escalates to a human when policy demands it — all in one model call cycle.
+**Avni** is a production-grade, agentic WhatsApp commerce assistant built for a boutique fashion retailer, powered by a **single Claude tool-use loop**. Customers chat (or send voice notes in South Indian languages) on WhatsApp; Avni searches the catalog, checks live inventory, looks up orders, and escalates to a human when policy demands it — all in one model call cycle.
 
-Built for a boutique fashion retailer; published here with all client-specific data replaced by a fictional demo brand ("DemoBoutique").
+Published here with all client-identifying data replaced by a fictional demo brand ("DemoBoutique"); the assistant's name is used with the client's permission.
 
 ## Highlights
 
@@ -10,7 +10,7 @@ Built for a boutique fashion retailer; published here with all client-specific d
 - **Dialect-aware voice pipeline.** Whisper (`whisper-large-v3-turbo` via Groq) transcription with hallucination cleanup and dialect detection for Malayalam, Tamil, Telugu, and Kannada — down to regional dialect markers (Thrissur vs. Malabar Malayalam, Telangana vs. Coastal Andhra Telugu, ...).
 - **Semantic product search.** OpenAI embeddings + Qdrant vector store, with store-scoped filtering and Postgres as the source of truth.
 - **Human handoff with hard guardrails.** Policy-sensitive requests (refunds, disputes, payments) are never auto-answered — they create a handoff record and route to the owner's Control Room.
-- **Owner Control Room.** A single-page operational dashboard (health, conversations, handoffs, system events, CSV exports) served straight from FastAPI.
+- **Avni Control Room.** A single-page operational dashboard for the owner (health, conversations, handoffs, system events, CSV exports) served straight from FastAPI.
 - **Production hygiene.** Webhook signature verification (`X-Hub-Signature-256`), PII-masked logging, Redis reliable-queue with crash recovery, `tenacity` retries on every external API, env validation at startup, separate dev/prod compose files.
 
 ## Architecture

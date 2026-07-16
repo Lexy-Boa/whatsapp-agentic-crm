@@ -1,1 +1,1 @@
-"""Demo-readiness helpers for offline demo validation."""
+"""Demo-readiness helpers for offline Avni validation."""

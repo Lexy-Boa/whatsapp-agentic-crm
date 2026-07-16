@@ -1,1 +1,1 @@
-"""Observability helpers for Control Room."""
+"""Observability helpers for Avni Control Room."""

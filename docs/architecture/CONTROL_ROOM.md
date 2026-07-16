@@ -1,18 +1,18 @@
-# Control Room - Architecture Decisions
+# Avni Control Room - Architecture Decisions
 
 ## Purpose
 
-Control Room is an observability and owner-operations interface for a
-single-brand deployment.
+Avni Control Room is an observability and owner-operations interface for a
+single-brand Avni deployment.
 
 It is not a staff dashboard, agent workspace, or multi-user CRM admin product.
-Its first job is to show what the agent is doing, whether the runtime is
+Its first job is to show what the Avni agent is doing, whether the runtime is
 healthy, where failures are happening, and what conversation and handoff state
 exists in the system.
 
 ## Product Truth
 
-- The system is single-tenant per deployment.
+- Avni is single-tenant per deployment.
 - One deployment serves one business owner, one brand, one WhatsApp business
   number, and one operational database.
 - Multi-tenant SaaS concerns are explicitly out of scope for the current phase.
@@ -59,7 +59,7 @@ Current assumptions:
 
 ## Data Boundaries
 
-The system distinguishes between operational logs and business records.
+Avni distinguishes between operational logs and business records.
 
 ### Operational Logs
 
@@ -181,7 +181,7 @@ Owner-facing state:
 ## Decision Summary
 
 - Single-tenant per deployment is the current product truth.
-- Control Room is an owner-facing observability console, not a staff
+- Avni Control Room is an owner-facing observability console, not a staff
   dashboard.
 - Full business records remain viewable and exportable.
 - Operational logs must remain privacy-safe and must not contain raw message

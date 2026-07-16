@@ -138,4 +138,4 @@ Do you have COD and can I return this if it does not fit?
 - at least one handoff path is visible and understandable
 - operational logs show masked phone numbers only
 - queue recovery prevents silent loss if the worker crashes mid-processing
-- Control Room shows fresh activity and lets the owner resolve/release at least one conversation
+- Avni Control Room shows fresh activity and lets the owner resolve/release at least one conversation
